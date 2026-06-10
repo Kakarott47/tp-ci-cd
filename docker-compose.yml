@@ -1,0 +1,36 @@
+# Stack multi-conteneurs Docker Compose (TP4) - SQUELETTE A COMPLETER.
+#
+# Objectif : orchestrer deux services :
+#   - app : l'API Node.js construite a partir du Dockerfile (TP3) ;
+#   - db  : une base de donnees PostgreSQL (image postgres:16).
+#
+# L'application doit pouvoir joindre la base via la variable DATABASE_URL.
+# Les donnees de la base doivent etre persistees grace a un volume nomme.
+#
+# Lancement attendu : docker compose up --build
+#
+# Completez les sections marquees TODO.
+
+services:
+  # TODO 1 : definir le service "app".
+  #   - build : construire l'image a partir du Dockerfile local ;
+  #   - ports : exposer le port 3000 ;
+  #   - environment : definir DATABASE_URL pointant vers le service "db" ;
+  #   - depends_on : attendre que "db" soit prete.
+  # app:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   ...
+
+  # TODO 2 : definir le service "db".
+  #   - image : postgres:16 ;
+  #   - environment : POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB ;
+  #   - volumes : monter un volume nomme sur /var/lib/postgresql/data.
+  # db:
+  #   image: postgres:16
+  #   ...
+
+# TODO 3 : declarer le volume nomme persistant utilise par la base.
+# volumes:
+#   db_data:

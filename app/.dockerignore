@@ -1,0 +1,5 @@
+# Fichiers a ne pas copier dans l'image Docker (TP3).
+node_modules
+.git
+coverage
+*.log

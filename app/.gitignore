@@ -1,0 +1,8 @@
+# Dependances installees
+node_modules
+
+# Rapports de couverture de tests
+coverage
+
+# Journaux
+*.log

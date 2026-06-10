@@ -1,0 +1,37 @@
+# Pipeline d'integration continue GitHub Actions (TP1) - SQUELETTE A COMPLETER.
+#
+# Objectif du TP1 :
+#   Ecrire un pipeline qui, a chaque push ou pull request, installe les
+#   dependances de l'application (dossier app/) et lance la suite de tests.
+#
+# A vous de completer les sections marquees TODO ci-dessous.
+# Aide : consultez la documentation officielle des actions
+#   - actions/checkout
+#   - actions/setup-node
+
+name: CI
+
+# TODO 1 : definir les declencheurs du pipeline (on:).
+#   - push sur la branche principale ;
+#   - pull_request vers la branche principale.
+on:
+  # TODO : completer ici (push / pull_request).
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    # Astuce : l'application se trouve dans le sous-dossier app/.
+    # Vous pouvez definir un working-directory par defaut.
+    # defaults:
+    #   run:
+    #     working-directory: jour-2-automatisation-conteneurs/code/starter/app
+
+    steps:
+      # TODO 2 : recuperer le code source (action actions/checkout).
+
+      # TODO 3 : installer Node.js version 20 (action actions/setup-node).
+
+      # TODO 4 : installer les dependances de maniere reproductible (npm ci).
+
+      # TODO 5 : lancer les tests (npm test).

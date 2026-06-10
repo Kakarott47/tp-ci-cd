@@ -1,0 +1,26 @@
+{
+  "name": "inf236-tp-app",
+  "version": "1.0.0",
+  "description": "Petite API Express servant de support aux travaux pratiques du Jour 2 (INF236 - Metier DevOps).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "cesi",
+    "inf236",
+    "devops",
+    "express",
+    "jest"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}

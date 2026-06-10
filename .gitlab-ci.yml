@@ -1,0 +1,23 @@
+# Pipeline d'integration continue GitLab CI (TP1, variante) - SQUELETTE A COMPLETER.
+#
+# Objectif : reproduire le pipeline du TP1 avec la syntaxe GitLab CI.
+#   - une etape "build" qui installe les dependances ;
+#   - une etape "test" qui lance Jest.
+#
+# Completez les sections marquees TODO.
+
+# TODO 1 : choisir une image Docker de base contenant Node.js 20.
+# image: node:20-alpine
+
+# TODO 2 : declarer les etapes du pipeline (build, test) dans le bon ordre.
+stages:
+  # - build
+  # - test
+
+# Astuce : l'application se trouve dans le sous-dossier app/.
+# variables:
+#   APP_DIR: jour-2-automatisation-conteneurs/code/starter/app
+
+# TODO 3 : ecrire le job "build" (stage build) qui execute "npm ci".
+
+# TODO 4 : ecrire le job "test" (stage test) qui execute "npm ci" puis "npm test".
